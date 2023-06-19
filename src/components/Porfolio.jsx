@@ -1,5 +1,5 @@
 import React from 'react'
-import arrayDestruct from '../assets/portfolio/arrayDestruct.jpg';
+import crypto from '../assets/portfolio/crypto.png';
 import installNode from '../assets/portfolio/installNode.jpg';
 import navbar from '../assets/portfolio/navbar.jpg';
 import reactParallax from '../assets/portfolio/reactParallax.jpg';
@@ -9,27 +9,33 @@ const Porfolio = () => {
     const portfolios =[
         {
             id:1,
-            src: arrayDestruct
+            src: crypto,
+            link: 'https://cryptobase-d1e9d.web.app/',
         },
         {
             id:2,
-            src: reactParallax
+            src: reactParallax,
+            link: 'https://cryptobase-d1e9d.web.app/',
         },
         {
             id:3,
-            src: navbar
+            src: navbar,
+            link: 'https://cryptobase-d1e9d.web.app/',
         },
         {
             id:4,
-            src: reactSmooth
+            src: reactSmooth,
+            link: 'https://cryptobase-d1e9d.web.app/',
         },
         {
             id:5,
-            src: installNode
+            src: installNode,
+            link: 'https://cryptobase-d1e9d.web.app/',
         },
         {
             id:6,
-            src: reactWeather
+            src: reactWeather,
+            link: 'https://cryptobase-d1e9d.web.app/',
         },
     ]
   return (
@@ -47,12 +53,12 @@ const Porfolio = () => {
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8
             px-12 sm:px-0'>
                   {
-                portfolios.map(({id,src}) =>(
+                portfolios.map(({id,src,link}) =>(
                     <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
                     <img src={src} alt="" 
-                    className='rounded-md duration-200 hover:scale-105' />
+                    className='rounded-md duration-200 hover:scale-105 h-[174px] w-full' />
                     <div className='flex items-center justify-center'>
-                        <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Demo</button>
+                        <a href={link}><button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Demo</button></a>
                         <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Code</button>
                     </div>
                 </div>
