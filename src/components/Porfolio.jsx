@@ -1,9 +1,9 @@
 import React from 'react'
 import crypto from '../assets/portfolio/crypto.png';
 import installNode from '../assets/portfolio/installNode.jpg';
-import navbar from '../assets/portfolio/navbar.jpg';
+import carousel from '../assets/portfolio/carousel.jpg';
 import reactParallax from '../assets/portfolio/reactParallax.jpg';
-import reactSmooth from '../assets/portfolio/reactSmooth.jpg';
+import todoList from '../assets/portfolio/todoList.png';
 import reactWeather from '../assets/portfolio/reactWeather.jpg';
 const Porfolio = () => {
     const portfolios =[
@@ -15,16 +15,16 @@ const Porfolio = () => {
         {
             id:2,
             src: reactParallax,
-            link: 'https://cryptobase-d1e9d.web.app/',
+            link: 'https://main--calm-snickerdoodle-196f58.netlify.app/',
         },
         {
             id:3,
-            src: navbar,
-            link: 'https://cryptobase-d1e9d.web.app/',
+            src: carousel,
+            link: 'https://classy-cajeta-2dc103.netlify.app/',
         },
         {
             id:4,
-            src: reactSmooth,
+            src: todoList,
             link: 'https://cryptobase-d1e9d.web.app/',
         },
         {
